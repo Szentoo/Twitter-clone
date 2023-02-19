@@ -1,0 +1,161 @@
+.news-feed {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 233px;
+    border-bottom: solid;
+    border-width: 1px;
+    border-bottom-color: rgb(235, 235, 235);
+    transition: background-color 0.15s;
+    line-break: normal;
+  }
+  .news-feed:hover {
+    background-color: rgb(243, 243, 243);
+    cursor: pointer;
+  }
+  .tweet-container {
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid;
+    border-bottom-color: rgb(235, 235, 235);
+    border-width: 1px;
+  }
+  .tweet-container .picture {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 10px;
+  }
+  .news-feed .tweet-profile-picture {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin: 0 10px 0 10px;
+  }
+  .vitals {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+  }
+  .vitals .name a {
+    text-decoration: none;
+    color: black;
+  }
+  .vitals .name a:hover {
+    text-decoration: underline;
+  }
+
+  .vitals .name,
+  .tweet-text {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    overflow-wrap: normal;
+    padding-right: 10px;
+    line-break: normal;
+  }
+  .tweet-text p a {
+    margin: 0;
+    color: rgb(3, 153, 239);
+    padding: 0 3px 0 3px;
+    text-decoration: none;
+    display: flex;
+  }
+  .tweet-text p {
+    margin: 0;
+  }
+  .tweet-text p a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .vitals .name div {
+    display: inline-flex;
+    color: rgb(83, 83, 83);
+    font-weight: 400;
+  }
+  .more-in-tweet{
+    transition: background-color 0.4s, padding 0.4s ;
+    border-radius: 20px;
+    padding: 4px;
+  }
+  .more-in-tweet:hover{
+    color: rgb(3, 153, 239);
+    background-color: rgba(3, 153, 239, 0.3);
+    border-radius: 20px;
+  }
+  .verified{
+    height:20px;
+    width: 20px;
+    object-fit: cover;
+    margin:0 3px 0 3px;
+  }
+
+  .vitals .pic {
+    height: 600px;
+    width: 440px;
+    border-radius: 20px;
+    object-fit:cover;
+    margin-bottom: 3px;
+    margin-top: 10px;
+  }
+
+  .reactions {
+    display: flex;
+    padding-bottom: 5px;
+  }
+  .reactions div {
+    padding: 0px 20px 0px 0;
+  }
+  .reactions p {
+    margin: 0;
+  }
+  .comment,
+  .retweet,
+  .like,
+  .view,
+  .share {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+  .comment-picture,
+  .retweet-picture,
+  .like-picture,
+  .view-picture,
+  .share-picture {
+    height: 18px;
+    width: 18px;
+    display: flex;
+    padding: 8px;
+    margin-right: 3px;
+  }
+  .comment:hover,
+  .view:hover {
+    color: rgb(3, 153, 239);
+    cursor: pointer;
+  }
+  .comment-picture:hover,
+  .view-picture:hover,
+  .share-picture:hover {
+    color: rgb(3, 153, 239);
+    background-color: rgba(3, 153, 239, 0.3);
+    border-radius: 20px;
+  }
+  .retweet:hover {
+    color: rgb(127, 205, 127);
+    cursor: pointer;
+  }
+  .retweet-picture:hover {
+    color: rgb(127, 205, 127);
+    background-color: rgba(127, 205, 127, 0.3);
+    border-radius: 20px;
+  }
+  .like:hover {
+    color: rgb(245, 111, 142);
+    cursor: pointer;
+  }
+  .like-picture:hover {
+    color: rgb(245, 111, 142);
+    background-color: rgba(245, 111, 142, 0.3);
+    border-radius: 20px;
+  }

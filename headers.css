@@ -1,0 +1,224 @@
+.middle-section {
+    font-family: arial;
+   position: absolute;
+   display: flex;
+    left: 350px;
+    height: 3000px;
+    width: 610px;
+    border-left-style: solid;
+    border-right-style:solid ;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-color: rgb(245, 245, 245);
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(245, 245, 245);
+    height: 110px;
+    z-index: 100;
+    background-color: white;
+    opacity: 0.98;
+  }
+  .home {
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    padding-left: 14px;
+    height: 50px;
+    cursor: pointer;
+  }
+  .twopart {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    width: 610px;
+  }
+  .foryou,
+  .following {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.15s;
+  }
+  .foryou {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: rgb(10, 140, 220);
+    text-decoration-thickness: 4px;
+  }
+  .following {
+    color: rgb(91, 91, 91);
+  }
+  .foryou:hover,
+  .following:hover {
+    background-color: rgb(225, 225, 225);
+    cursor: pointer;
+  }
+  .secondheader {
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(235, 235, 235);
+    border-bottom-style: solid;
+    position: absolute;
+    height: 125px;
+    top: 105px;
+    width: 100%;
+  }
+  .left {
+    display: inline-flex;
+    justify-content: flex-start;
+    padding: 12px;
+  }
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .tweet-profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    object-fit: cover;
+  }
+  .tweet-profile-picture:hover{
+    cursor: pointer;
+    filter: brightness(92%);
+  }
+  .text-container {
+    display: inline-flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .text-box {
+    vertical-align: bottom;
+    font-size: 20px;
+    width: 400px;
+    height: 50px;
+    border: none;
+  }
+
+  .tweet-text-button {
+    display: inline-flex;
+    justify-content: end;
+    background-color: rgb(0, 162, 226);
+    opacity: 0.6;
+    color: white;
+    font-weight: bold;
+    margin: 0 16px 14px 0;
+    padding: 8px 14px 8px 14px;
+    border-radius: 16px;
+  }
+
+  .emojis {
+    display: flex;
+    justify-content: space-evenly;
+    width: 250px;
+    margin-left: 65px;
+    margin-top: 10px;
+    
+  }
+  .emoji-container {
+    display: flex;
+    height: 20px;
+    border-radius: 20px;
+    transition: opacity 3s, background-color 0.3s, padding 0.3s;
+  }
+  .emoji-container:hover .tooltip-media {
+    opacity: 0.8;
+  }
+  .emoji-container:hover .tooltip-gif {
+    opacity: 0.8;
+  }
+  .emoji-container:hover .tooltip-emoji {
+    opacity: 0.8;
+  }
+  .emoji-container:hover .tooltip-poll {
+    opacity: 0.8;
+  }
+  .emoji-container:hover .tooltip-schedule {
+    opacity: 0.8;
+  }
+  .emojis img {
+    height: 20px;
+    width: 20px;
+    position: relative;
+  }
+  .emoji-container:hover {
+    background-color: rgba(0, 162, 226, 0.5);
+    border-radius: 20px;
+    height: 20px;
+    padding: 5px;
+    transition-timing-function: linear;
+    cursor: pointer;
+  }
+  .tooltip-media {
+    position: fixed;
+    top: 224px;
+    left: 430px;
+    background-color: rgb(96, 96, 96);
+    color: white;
+    padding: 3px 2px 3px 2px;
+    border-radius: 2px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+  }
+  .tooltip-gif {
+    position: fixed;
+    top: 224px;
+    left: 474px;
+    background-color: rgb(96, 96, 96);
+    color: white;
+    padding: 3px 2px 3px 2px;
+    border-radius: 2px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+  }
+  .tooltip-poll {
+    position: fixed;
+    top: 224px;
+    left: 510px;
+    background-color: rgb(96, 96, 96);
+    color: white;
+    padding: 3px 2px 3px 2px;
+    border-radius: 2px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+  }
+  .tooltip-emoji {
+    position: fixed;
+    top: 224px;
+    left: 543px;
+    background-color: rgb(96, 96, 96);
+    color: white;
+    padding: 3px 2px 3px 2px;
+    border-radius: 2px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+  }
+  .tooltip-schedule {
+    position: fixed;
+    top: 224px;
+    left: 570px;
+    background-color: rgb(96, 96, 96);
+    color: white;
+    padding: 3px 2px 3px 2px;
+    border-radius: 2px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+  }

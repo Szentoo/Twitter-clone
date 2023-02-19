@@ -1,0 +1,178 @@
+.right-section{
+    position: absolute;
+    top: 0;
+    right:0px;
+    width: 445px;
+    font-family: arial;
+    display: flex;
+    z-index: 100;
+  }
+  .search-bar{
+    width: 330px;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: rgb(238, 238, 238);
+    border: none;
+    margin: 5px 0 25px 0;
+    position: absolute;
+    z-index: 100;
+  }
+  .search-bar-container{
+    background-color: white;
+    z-index: 100;
+    width: 330px;
+    height: 55px;
+    position: fixed;
+  }
+  .trending{
+    background-color:rgba(234, 234, 234, 0.3) ;
+    width: 360px;
+    height:790px;
+   border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+  }
+  .trending-fy{
+    display: flex;
+    padding: 14px;
+    font-weight: 900;
+    font-size: 20px;
+  }
+  .trending-tweets{
+    padding: 10px 10px 10px 14px;
+    line-height: 22px;
+    font-size: 14px;
+    color:rgb(83,100,113);;
+    transition: background-color 0.15s;
+  }
+  .trending-tweets .more{
+    transition: background-color 0.4s; padding: 0.4s;
+    border-radius: 20px;
+    padding: 4px;
+  }
+  .trending-tweets .more:hover{
+    background-color:rgba(3, 153, 239,0.3) ;
+    border-radius: 20px;
+    transition-timing-function: 0.6s;
+  }
+  .trending-tweets:hover{
+    background-color: rgba(117, 117, 117,0.2);
+    cursor: pointer;
+  }
+  .first-line{
+    align-items: center;
+    display: flex;
+  }
+  
+  .second-line{
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .show-more{
+    background-color: rgba(234, 234, 234,0.7);
+    color: rgb(0, 172, 238);
+    padding: 20px;
+    display: flex;
+    transition: background-color 0.15s;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+  }
+  .show-more:hover{
+    background-color: rgba(117, 117, 117,0.2);
+    cursor: pointer;
+  }
+  .terms-and-policy{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 13px;
+    margin-top: 40px;
+    padding-top: 20px;
+    color:rgb(83, 100, 113);
+    border-top-style: solid ;
+    border-top-width: 2px ;
+    border-top-color: rgba(234, 234, 234,0.3) ;
+  }
+  .terms-and-policy div{
+    padding: 4px 5px 4px 4px;
+   flex-direction: row;
+   justify-content: center;
+   text-decoration: none;
+  }
+  .terms-and-policy div:hover{
+    text-decoration: underline;
+  }
+  .messages-bottom{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: 0;
+    right: 28px;
+    width: 400px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    box-shadow: 3px 3px 10px rgb(234, 234, 234 )inset;
+  }
+  .messages-bottom .message{
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 190px;
+  }
+  .messages-bottom .picture{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 10px;
+    height: 22px;
+    margin-top: 17px;
+  }
+  .messages-bottom img{
+    height: 22px;
+    width: 22px;
+    border-radius: 20px;
+    transition: background-color 0.3s, padding 0.3s;
+    transition-timing-function: linear;
+    position: relative;
+  }
+  .messages-bottom:hover{
+    cursor: pointer;
+  }
+  .messages-bottom img:hover{
+    border-radius: 20px;
+    padding: 5px;
+    background-color:rgba(117, 117, 117,0.2) ; 
+  }
+  .messages-bottom .picture:hover .new-messages-tooltip {
+    visibility: visible;
+  }
+  .messages-bottom .picture:hover .expand-tooltip{
+    visibility: visible;
+  }
+
+  .new-messages-tooltip{
+    position: absolute;
+    right: 10px;
+    bottom: 50px;
+    font-size: 12px;
+    background-color: rgb(117, 117, 117);
+    color: white;
+    padding: 3px 5px 3px 5px;
+    visibility: hidden;
+    transition: opacity 1s; 
+  }
+  .expand-tooltip{
+    position: absolute;
+    right: 0px;
+    bottom: 50px;
+    font-size: 12px;
+    background-color: rgb(117, 117, 117);
+    color: white;
+    padding: 3px 5px 3px 5px;
+    visibility: hidden;
+    transition: opacity 1s; 
+  }
